@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://atlaspro4k.net
+
+# Sitemaps
+Sitemap: https://atlaspro4k.net/sitemap.xml

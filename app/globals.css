@@ -1,0 +1,140 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --radius-soft: 1.25rem;
+  --shadow-soft: 0 18px 45px rgba(15, 23, 42, 0.35);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-atlas-night text-gray-100 font-sans antialiased;
+  background-image:
+    radial-gradient(circle at 0% 0%, rgba(30, 101, 255, 0.18), transparent 45%),
+    radial-gradient(
+      circle at 100% 0%,
+      rgba(246, 195, 68, 0.15),
+      transparent 40%
+    );
+}
+
+a {
+  @apply text-atlas-gold transition-colors duration-200;
+}
+
+a:hover {
+  @apply text-atlas-gold/80;
+}
+
+.container {
+  @apply mx-auto w-full max-w-6xl px-6;
+}
+
+.glass {
+  background: rgba(12, 18, 34, 0.7);
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(33, 45, 70, 0.4);
+  border-radius: var(--radius-soft);
+}
+
+.gold-gradient {
+  background: linear-gradient(135deg, #f6c344 0%, #f0a500 50%, #ffd86f 100%);
+}
+
+.blue-gradient {
+  background: linear-gradient(135deg, #1e65ff 0%, #3f88ff 50%, #61a0ff 100%);
+}
+
+.outline-gradient {
+  border: 1px solid transparent;
+  background-image:
+    linear-gradient(#0b1023, #0b1023), linear-gradient(135deg, #1e65ff, #f6c344);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.9s ease forwards;
+  opacity: 0;
+  transform: translateY(16px);
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes dotPulse {
+  0%,
+  100% {
+    opacity: 0.2;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+.shadow-soft {
+  box-shadow: var(--shadow-soft);
+}
+
+.prose {
+  @apply prose-invert prose-lg;
+}
+
+.nav-blur {
+  backdrop-filter: blur(18px);
+  background: rgba(5, 6, 15, 0.82);
+  border-bottom: 1px solid rgba(30, 101, 255, 0.12);
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #25d366;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 12px 25px rgba(37, 211, 102, 0.35);
+  z-index: 1000;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  box-shadow: 0 16px 30px rgba(37, 211, 102, 0.45);
+}
+
+.whatsapp-float svg {
+  width: 30px;
+  height: 30px;
+}
+
+@media (max-width: 640px) {
+  .whatsapp-float {
+    width: 52px;
+    height: 52px;
+    bottom: 16px;
+    right: 16px;
+  }
+
+  .whatsapp-float svg {
+    width: 26px;
+    height: 26px;
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Atlas PRO IPTV",
+  "short_name": "Atlas PRO",
+  "description": "Atlas PRO IPTV – service IPTV francophone ultra-rapide : +25 000 chaînes et +70 000 VOD en 4K pour l’Europe francophone.",
+  "lang": "fr-FR",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#05060F",
+  "theme_color": "#05060F",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any"
+    }
+  ]
+}
