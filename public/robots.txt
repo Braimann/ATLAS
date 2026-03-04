@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://atlaspro4k.fr/sitemap.xml
+Sitemap: https://atlaspro4k.net/sitemap.xml
 
 # Disallow admin and private areas (if any)
 Disallow: /admin/

@@ -30,6 +30,15 @@ wrangler pages deploy public --project-name=atlas-pro-4k
 
 Votre site sera en ligne sur `https://<project-name>.pages.dev` (ou votre domaine personnalisé).
 
+### Sitemap et Google Search Console
+
+Le `sitemap.xml` et le `robots.txt` utilisent le domaine **atlaspro4k.net**. Pour que Google accepte le sitemap sans erreur « Cette URL n'est pas autorisée pour un sitemap situé à cet emplacement » :
+
+1. **Ajoutez le domaine personnalisé** dans Cloudflare : Workers & Pages → votre projet → **Custom domains** → **Set up a custom domain** → `atlaspro4k.net` (et `www.atlaspro4k.net` si vous l’utilisez).
+2. Une fois le site servi sur **https://atlaspro4k.net**, soumettez dans Search Console (propriété **atlaspro4k.net**) l’URL du sitemap : **https://atlaspro4k.net/sitemap.xml**.
+
+Le sitemap doit être **hébergé sur le même domaine** que les URL qu’il liste (règle Google).
+
 ---
 
 **Note** : Vous pouvez supprimer les dossiers `atlas-pro-4k` et `app` après déploiement si vous ne souhaitez garder que la version déployable dans `public`.
