@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page non trouvée – Atlas Pro 4K | Erreur 404</title>
+    <meta name="description" content="La page que vous recherchez n'existe pas. Retournez à l'accueil Atlas Pro 4K ou découvrez nos offres IPTV.">
+    <meta name="robots" content="noindex, follow">
+    <link rel="canonical" href="https://atlaspro4k.net/404.html">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .error-page { min-height: 100vh; display: flex; align-items: center; justify-content: center; background: var(--gradient-hero); position: relative; overflow: hidden; padding: 2rem; }
+        .particles { position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; pointer-events: none; }
+        .error-content { text-align: center; z-index: 10; max-width: 600px; }
+        .error-code { font-family: var(--font-title); font-size: clamp(6rem, 15vw, 12rem); font-weight: 900; background: var(--gradient-text); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; line-height: 1; margin-bottom: 1rem; text-shadow: 0 0 60px rgba(0,212,255,0.3); }
+        .error-title { font-family: var(--font-title); font-size: clamp(1.5rem, 4vw, 2.5rem); margin-bottom: 1rem; }
+        .error-message { font-size: 1.1rem; color: var(--text-secondary); margin-bottom: 2rem; }
+        .error-actions { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; }
+        .glitch-404 { position: relative; animation: glitch-skew 3s infinite; }
+        @keyframes glitch-skew { 0%, 100% { transform: skew(0deg); } 20% { transform: skew(-2deg); } 40% { transform: skew(2deg); } 60% { transform: skew(-1deg); } 80% { transform: skew(1deg); } }
+    </style>
+</head>
+<body>
+    <div class="error-page">
+        <div class="particles" id="particles"></div>
+        <div class="error-content">
+            <div class="error-code glitch-404">404</div>
+            <h1 class="error-title">Page non trouvée</h1>
+            <p class="error-message">Oups ! La page que vous recherchez semble avoir disparu dans le cyberespace. Pas d'inquiétude, nous vous aidons à retrouver votre chemin.</p>
+            <div class="error-actions">
+                <a href="/" class="cta-button cta-primary">🏠 Retour à l'accueil</a>
+                <a href="/abonnement.html" class="cta-button cta-secondary">💎 Voir les offres</a>
+                <a href="/contact.html" class="cta-button cta-secondary">📞 Nous contacter</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const particlesContainer = document.getElementById('particles');
+            for (let i = 0; i < 20; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 15 + 's';
+                particle.style.animationDuration = (10 + Math.random() * 10) + 's';
+                particlesContainer.appendChild(particle);
+            }
+        });
+    </script>
+</body>
+</html>

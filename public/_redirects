@@ -1,0 +1,53 @@
+# Redirections Cloudflare Pages - Atlas Pro 4K
+
+# Redirections courtes vers pages principales
+/atlas-pro      /               301
+/iptv           /abonnement.html 301
+/order          /abonnement.html 301
+/shop           /abonnement.html 301
+/promo          /abonnement.html 301
+/offres         /abonnement.html 301
+/tarifs         /abonnement.html 301
+/prix           /abonnement.html 301
+
+# Redirections FAQ et support
+/faq            /faq.html       301
+/aide           /faq.html       301
+/support        /contact.html   301
+/help           /faq.html       301
+
+# Redirections Blog
+/blog           /blog/index.html 301
+/articles       /blog/index.html 301
+/news           /blog/index.html 301
+
+# Redirections Contact
+/contact        /contact.html   301
+/contactez-nous /contact.html   301
+
+# Redirections légales
+/mentions       /mentions-legales.html 301
+/cgv            /cgv.html       301
+/privacy        /confidentialite.html 301
+
+# Redirections spécifiques produit
+/avis           /blog/atlas-pro-4k-avis.html 301
+/test           /blog/atlas-pro-4k-avis.html 301
+/review         /blog/atlas-pro-4k-avis.html 301
+
+# Redirections WhatsApp
+/whatsapp       https://wa.me/212770303940?text=Bonjour%2C+je+veux+commander+Atlas+Pro+4K 301
+/commander      https://wa.me/212770303940?text=Bonjour%2C+je+veux+commander+Atlas+Pro+4K 301
+
+# Redirections comparatifs
+/compare        /blog/atlas-pro-vs-concurrents.html 301
+/comparatif     /blog/atlas-pro-vs-concurrents.html 301
+/meilleur       /blog/meilleur-iptv-2026.html 301
+/top            /blog/meilleur-iptv-2026.html 301
+
+# Redirections anciennes URLs (si migration)
+/ancien-produit /abonnement.html 301
+/old-page       /               301
+
+# Page 404 personnalisée (toutes les URLs non trouvées)
+/*              /404.html       404

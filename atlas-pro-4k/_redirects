@@ -1,0 +1,12 @@
+# Cloudflare Pages Redirects
+# Format: from to [status]
+
+# Redirect www to non-www
+https://www.atlaspro4k.fr/* https://atlaspro4k.fr/:splat 301
+
+# Redirect HTTP to HTTPS
+http://atlaspro4k.fr/* https://atlaspro4k.fr/:splat 301
+http://www.atlaspro4k.fr/* https://atlaspro4k.fr/:splat 301
+
+# Custom 404
+/* /404.html 404
