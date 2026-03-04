@@ -18,9 +18,10 @@ Tout le site se trouve dans **un seul dossier** : `public/`
 
 1. Allez sur [dash.cloudflare.com](https://dash.cloudflare.com) → **Workers & Pages** → **Create** → **Pages** → **Connect to Git** ou **Upload assets**.
 2. Si **Upload assets** : compressez le contenu du dossier `public` (tous les fichiers **à la racine** du ZIP, pas un sous-dossier `public`), puis uploadez le fichier ZIP.
-3. Si **Connect to Git** : branchez votre dépôt et indiquez :
+3. Si **Connect to Git** : branchez le dépôt [Braimann/ATLAS](https://github.com/Braimann/ATLAS), branche **`new`**, puis indiquez :
    - **Build command** : vide (site statique)
    - **Build output directory** : `public`
+   - Le fichier `wrangler.toml` à la racine précise déjà ce dossier pour Cloudflare.
 
 ### Méthode 2 : Wrangler (CLI)
 
