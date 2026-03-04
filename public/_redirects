@@ -49,5 +49,4 @@
 /ancien-produit /abonnement.html 301
 /old-page       /               301
 
-# Page 404 personnalisée (toutes les URLs non trouvées)
-/*              /404.html       404
+# Note: Workers n'accepte pas 404 dans _redirects. Les URLs inconnues renverront la 404 par défaut.
