@@ -29,31 +29,68 @@
         "@type": "Product",
         "name": "Atlas Pro 4K Abonnement IPTV",
         "description": "Abonnement IPTV premium avec 22 000+ chaînes et 150 000 VOD en 4K",
+        "image": "https://atlaspro4k.net/images/og-pricing.jpg",
         "brand": {
             "@type": "Brand",
             "name": "Atlas Pro 4K"
+        },
+        "hasMerchantReturnPolicy": {
+            "@type": "MerchantReturnPolicy",
+            "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+            "merchantReturnDays": 7,
+            "returnMethod": "https://schema.org/ReturnByMail",
+            "returnFees": "https://schema.org/FreeReturn"
         },
         "offers": [
             {
                 "@type": "Offer",
                 "name": "1 Mois",
+                "url": "https://atlaspro4k.net/abonnement.html#offres",
                 "price": "9.99",
                 "priceCurrency": "EUR",
-                "availability": "https://schema.org/InStock"
+                "availability": "https://schema.org/InStock",
+                "priceValidUntil": "2026-12-31",
+                "shippingDetails": {
+                    "@type": "OfferShippingDetails",
+                    "shippingRate": { "@type": "MonetaryAmount", "value": 0, "currency": "EUR" },
+                    "deliveryTime": { "@type": "ShippingDeliveryTime", "handlingTime": { "@type": "QuantitativeValue", "minValue": 0, "maxValue": 1, "unitCode": "DAY" }, "transitTime": { "@type": "QuantitativeValue", "minValue": 0, "maxValue": 0, "unitCode": "DAY" } }
+                }
             },
             {
                 "@type": "Offer",
                 "name": "6 Mois",
+                "url": "https://atlaspro4k.net/abonnement.html#offres",
                 "price": "39.99",
                 "priceCurrency": "EUR",
-                "availability": "https://schema.org/InStock"
+                "availability": "https://schema.org/InStock",
+                "priceValidUntil": "2026-12-31",
+                "shippingDetails": {
+                    "@type": "OfferShippingDetails",
+                    "shippingRate": { "@type": "MonetaryAmount", "value": 0, "currency": "EUR" },
+                    "deliveryTime": { "@type": "ShippingDeliveryTime", "handlingTime": { "@type": "QuantitativeValue", "minValue": 0, "maxValue": 1, "unitCode": "DAY" }, "transitTime": { "@type": "QuantitativeValue", "minValue": 0, "maxValue": 0, "unitCode": "DAY" } }
+                }
             },
             {
                 "@type": "Offer",
                 "name": "12 Mois",
-                "price": "59.99",
+                "url": "https://atlaspro4k.net/abonnement.html#offres",
+                "price": "29.99",
                 "priceCurrency": "EUR",
-                "availability": "https://schema.org/InStock"
+                "availability": "https://schema.org/InStock",
+                "priceValidUntil": "2026-12-31",
+                "shippingDetails": {
+                    "@type": "OfferShippingDetails",
+                    "shippingRate": {
+                        "@type": "MonetaryAmount",
+                        "value": 0,
+                        "currency": "EUR"
+                    },
+                    "deliveryTime": {
+                        "@type": "ShippingDeliveryTime",
+                        "handlingTime": { "@type": "QuantitativeValue", "minValue": 0, "maxValue": 1, "unitCode": "DAY" },
+                        "transitTime": { "@type": "QuantitativeValue", "minValue": 0, "maxValue": 0, "unitCode": "DAY" }
+                    }
+                }
             }
         ]
     }
